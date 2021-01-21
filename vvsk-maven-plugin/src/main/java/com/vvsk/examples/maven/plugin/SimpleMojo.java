@@ -7,9 +7,7 @@ public class SimpleMojo extends AbstractMojo{
     MavenProject project;
 
     public void execute() throws MojoExecutionException, MojoFailureException {
-    List<Dependency> dependencies = project.getDependencies();
-    long numDependencies = dependencies.stream().count();          
-    getLog().info("Number of dependencies: " + numDependencies);
-}
+    
+    }
 
 }
