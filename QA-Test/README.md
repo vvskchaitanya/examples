@@ -37,7 +37,7 @@ Question 1
 Consider the class `Example Line`. 
 Which parts of this class would you test and which would you not test? Why?
 ExampleLine has only logic inside the constructor so we only test the constructor of that class
-Test Approach: Pass different values to constructor and assert that proprties (using getter) are set based on logic provided.
+Test Scenario: Pass different values to constructor and assert that proprties (using getter) are set based on logic provided.
 
 Question 2
 ------
@@ -51,6 +51,14 @@ your unit tests pass reliably in repeated executions.
 
 Hint: Search `ExampleTest` and `pom.xml` for hints of two ways how the
 randomness of `ExampleTest` could be handled in your unit tests.
+
+Answer 2
+------
+ExampleClass to be tested by passing the class file as input parameter to constructor of ExampleClass
+Test Scenario 1: Passing the valid file and assert the number of code lines of ExampleClass match actual value
+Test Scenario 2: Passing invalid file and assert that IOExecption has been thrown while initialization of ExampleClass
+
+ExampleAnalyzer
 
 Question 3
 ------
